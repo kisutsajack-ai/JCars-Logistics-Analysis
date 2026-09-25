@@ -186,40 +186,35 @@ COUNTROWS(FactSalesOrders)
 Active Orders =
 CALCULATE(
     [Total Orders],
-    FactSalesOrders[Final Transaction Status] = "Active Sale"
-)
+    FactSalesOrders[Final Transaction Status] = "Active Sale")
 ```
 
 ```DAX
 Active Sales Revenue KES =
 CALCULATE(
     SUM(FactSalesOrders[Calculated Revenue KES]),
-    FactSalesOrders[Final Transaction Status] = "Active Sale"
-)
+    FactSalesOrders[Final Transaction Status] = "Active Sale")
 ```
 
 ```DAX
 Active Gross Margin =
 DIVIDE(
     [Active Gross Profit KES],
-    [Profit Analysis Revenue KES]
-)
+    [Profit Analysis Revenue KES])
 ```
 
 ```DAX
 On-Time Delivery Rate =
 DIVIDE(
     [On-Time Delivered Orders],
-    [Delivered Orders with Valid Duration]
-)
+    [Delivered Orders with Valid Duration])
 ```
 
 ```DAX
 Return Rate =
 DIVIDE(
     [Returned Orders],
-    [Orders with Known Return Status]
-)
+    [Orders with Known Return Status])
 ```
 
 ```DAX
@@ -228,9 +223,7 @@ CALCULATE(
     [Total Orders],
     USERELATIONSHIP(
         FactSalesOrders[Delivery Date],
-        DimDate[Date]
-    )
-)
+        DimDate[Date]))
 ```
 
 Additional measures cover revenue trends, year-to-date revenue, discounts, logistics cost, average order value, cancelled and refunded orders, loss-making orders, revenue validation and date reliability.
