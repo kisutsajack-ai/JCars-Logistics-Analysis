@@ -144,7 +144,7 @@ All monetary fields were converted to KES before aggregation.
 
 The fixed rates were used to keep the educational analysis reproducible. They are rounded project assumptions rather than transaction-date accounting rates.
 
-The reasonableness reference was the [Central Bank of Kenya Foreign Exchange Rates](https://www.centralbank.go.ke/rates/forex-exchange-rates/) page, accessed on 23 September 2026. CBK publishes indicative daily rates based on average market buying and selling rates.
+The currency reference was from the [Central Bank of Kenya Foreign Exchange Rates](https://www.centralbank.go.ke/rates/forex-exchange-rates/) page, accessed on 23 September 2026. CBK publishes indicative daily rates based on average market buying and selling rates.
 
 ## Assumptions and business rules
 
