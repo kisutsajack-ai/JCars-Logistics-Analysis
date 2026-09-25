@@ -186,7 +186,10 @@ Active Orders = CALCULATE([Total Orders],FactSalesOrders[Final Transaction Statu
 ```
 
 ```DAX
-Active Sales Revenue KES = CALCULATE(SUM(FactSalesOrders[Calculated Revenue KES]),FactSalesOrders[Final Transaction Status] = "Active Sale")
+Active Sales Revenue KES =
+CALCULATE(
+     SUM(FactSalesOrders[Calculated Revenue KES]),
+     FactSalesOrders[Final Transaction Status] = "Active Sale")
 ```
 
 ```DAX
