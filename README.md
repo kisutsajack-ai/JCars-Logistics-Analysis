@@ -372,11 +372,3 @@ JCars-Logistics-Power-BI/
 ## Author
 
 **Jack Kisutsa**
-
-- [Portfolio](https://kisutsajack-ai.github.io/)
-- [GitHub](https://github.com/kisutsajack-ai)
-- [LinkedIn](https://www.linkedin.com/in/jack-kisutsa/)
-
-## Project status
-
-The Power BI report, project documentation, cleaning log, README and technical article draft are complete. GitHub upload, Dev.to publication and final submission-link verification remain publication steps.
