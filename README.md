@@ -178,52 +178,31 @@ Relationships use many-to-one cardinality and single-direction filtering from ea
 ## Selected DAX measures
 
 ```DAX
-Total Orders =
-COUNTROWS(FactSalesOrders)
+Total Orders = COUNTROWS(FactSalesOrders)
 ```
 
 ```DAX
-Active Orders =
-CALCULATE(
-    [Total Orders],
-    FactSalesOrders[Final Transaction Status] = "Active Sale")
+Active Orders = CALCULATE([Total Orders],FactSalesOrders[Final Transaction Status] = "Active Sale")
 ```
 
 ```DAX
-Active Sales Revenue KES =
-CALCULATE(
-    SUM(FactSalesOrders[Calculated Revenue KES]),
-    FactSalesOrders[Final Transaction Status] = "Active Sale")
+Active Sales Revenue KES = CALCULATE(SUM(FactSalesOrders[Calculated Revenue KES]),FactSalesOrders[Final Transaction Status] = "Active Sale")
 ```
 
 ```DAX
-Active Gross Margin =
-DIVIDE(
-    [Active Gross Profit KES],
-    [Profit Analysis Revenue KES])
+Active Gross Margin = DIVIDE([Active Gross Profit KES],[Profit Analysis Revenue KES])
 ```
 
 ```DAX
-On-Time Delivery Rate =
-DIVIDE(
-    [On-Time Delivered Orders],
-    [Delivered Orders with Valid Duration])
+On-Time Delivery Rate = DIVIDE([On-Time Delivered Orders],[Delivered Orders with Valid Duration])
 ```
 
 ```DAX
-Return Rate =
-DIVIDE(
-    [Returned Orders],
-    [Orders with Known Return Status])
+Return Rate = DIVIDE([Returned Orders],[Orders with Known Return Status])
 ```
 
 ```DAX
-Orders by Delivery Date =
-CALCULATE(
-    [Total Orders],
-    USERELATIONSHIP(
-        FactSalesOrders[Delivery Date],
-        DimDate[Date]))
+Orders by Delivery Date = CALCULATE([Total Orders],USERELATIONSHIP(FactSalesOrders[Delivery Date],DimDate[Date]))
 ```
 
 Additional measures cover revenue trends, year-to-date revenue, discounts, logistics cost, average order value, cancelled and refunded orders, loss-making orders, revenue validation and date reliability.
