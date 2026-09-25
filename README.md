@@ -364,14 +364,14 @@ JCars-Logistics-Power-BI/
 ## Tools used
 
 - Microsoft Power BI Desktop
-- Power Query M
+- Power Query
 - DAX
 - Microsoft Excel for the cleaning and validation log
 - GitHub for project documentation and versioned publication
 
 ## Author
 
-**Jack Nimrod Kisutsa**
+**Jack Kisutsa**
 
 - [Portfolio](https://kisutsajack-ai.github.io/)
 - [GitHub](https://github.com/kisutsajack-ai)
